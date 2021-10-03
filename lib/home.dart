@@ -24,8 +24,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             // ignore: deprecated_member_use
             RaisedButton(
-              child: Text(
-                "Menu ação",
+              child: const Text(
+                "Bottom sheet",
                 style: TextStyle(fontSize: 20),
               ),
               onPressed: () {
@@ -43,14 +43,14 @@ void _openBottomSheet(context) {
   showModalBottomSheet(
     context: context,
     builder: (builder) {
-      return new Container(
-        padding: EdgeInsets.all(5.0),
-        child: new Wrap(
+      return Container(
+        padding: const EdgeInsets.all(5.0),
+        child: Wrap(
           children: <Widget>[
             getListTile(Icons.more, Colors.black45, "Ver mais", context),
             getListTile(Icons.favorite, Colors.pink, "Meus favoritos", context),
             getListTile(Icons.account_box, Colors.blue, "Mudar Senha", context),
-            new Divider(
+            const Divider(
               thickness: 2.0,
               height: 10.0,
             ),
