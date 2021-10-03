@@ -1,4 +1,4 @@
-# primeira_lista
+# Segundo App
 
 A new Flutter project.
 
